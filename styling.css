@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: hsl(0, 0%, 100%);
+}
+.signup-form{
+    padding: 0 4rem 0 2rem; 
+}
+img{
+    min-width: 100%;
+}
+.top-img{
+    margin: 0;
+    width: 100%;
+}
+h1{
+    font-size: 3rem;
+    color: hsl(234, 29%, 20%);
+}
+p{
+    color: hsl(235, 18%, 26%);
+    font-weight: 400;
+}
+ul{
+    padding: 0 0 0 1.5rem;
+}
+li{
+    padding: 0 0 1rem 1rem;
+}
+
+li::marker{
+    content:url(images/icon-list.svg);
+}
+.invalid{
+background-color: pink;
+}
+.invalid::placeholder{
+    color: red;
+}
+
+.error-msg{
+    color: red;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 600px){
+    body{
+        background-color: aqua;
+    }
+}
