@@ -34,9 +34,15 @@ form.addEventListener("submit", function (e) {
     }
     if (isValid) {
         document.getElementById("signup").style.display = "none";
+        document.getElementById("successMsg").style.display = "flex";
         document.getElementById("successMsg").innerHTML = ` 
+        <div class="success-content">
+        <div class="success-img">
+            <img src="images/icon-success.svg" alt="signed-up-icon">
+        </div>
         <h1>Thanks for subscribing!</h1> 
-        <p>A confirmation email has been sent to ${email.value}. Please open it and click the button inside to confirm your subscription. </p>
-        <button class="dismiss-btn" onclick="location.reload();" id="dismissBtn">Dismiss message</button>`;
+        <p>A confirmation email has been sent to <strong>${email.value}</strong>. Please open it and click the button inside to confirm your subscription. </p>
+        <button class="dismiss-btn" onclick="location.reload();" id="dismissBtn">Dismiss message</button>
+        </div>`;
     }
 });
